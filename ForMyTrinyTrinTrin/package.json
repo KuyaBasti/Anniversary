@@ -1,0 +1,8 @@
+{
+  "name": "anniversary-site",
+  "version": "1.0.0",
+  "description": "Anniversary celebration website",
+  "scripts": {
+    "build": "mkdir -p public && cp *.html *.jpg *.png *.JPG public/"
+  }
+} 
