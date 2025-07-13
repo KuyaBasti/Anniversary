@@ -19,7 +19,7 @@ export default function Header() {
           margin: '0',
           color: '#333'
         }}>
-          Happy 1 Year Anniversary!
+          Trin and Basti Adventures
         </h1>
         <p style={{
           fontStyle: 'italic',
@@ -27,7 +27,9 @@ export default function Header() {
           fontSize: '18px',
           color: '#777'
         }}>
-          I am so lucky to have you in my life. The moments we've shared have been nothing short of magical. I can't wait to see what the next year holds for us. It has been a long year and with that we have created so many memories. I am so grateful to have you in my life. I love you more than words can say. I can't wait to see what the next year holds for us.
+          I am so lucky to have you in my life. The moments we've shared have been nothing 
+          short of magical. I am so grateful to have you in my life. 
+          I love you more than words can say. 
         </p>
       </div>
     </header>
