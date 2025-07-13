@@ -1,0 +1,77 @@
+# Anniversary Photo Book
+
+A beautiful anniversary website built with modern web technologies to celebrate our first year together.
+
+## Features
+
+- **Modern Design**: Clean, responsive design with smooth animations
+- **Photo Gallery**: Organized photo grid with category filtering
+- **Featured Memory**: Special highlight for the most important moment
+- **Interactive**: Add new memories with a beautiful modal interface
+- **Responsive**: Works perfectly on all devices
+- **Fast Loading**: Optimized images and performance
+
+## Tech Stack
+
+- **Next.js 15** - React framework with App Router
+- **TypeScript** - Type safety and better developer experience
+- **Tailwind CSS** - Utility-first CSS framework for styling
+- **Framer Motion** - Smooth animations and transitions
+- **Next.js Image** - Optimized image loading and performance
+
+## Getting Started
+
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Run the development server:
+```bash
+npm run dev
+```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── layout.tsx          # Root layout with metadata
+│   ├── page.tsx            # Home page
+│   └── globals.css         # Global styles
+├── components/
+│   ├── AnniversaryPage.tsx # Main page component
+│   ├── Header.tsx          # Site header
+│   ├── FeaturedMemory.tsx  # Featured photo display
+│   ├── PhotoGrid.tsx       # Photo grid with filtering
+│   ├── PhotoCard.tsx       # Individual photo cards
+│   ├── AddPhotoModal.tsx   # Modal for adding new photos
+│   └── Footer.tsx          # Site footer
+└── public/
+    └── images/             # Photo assets
+```
+
+## Deployment
+
+This project is configured for deployment on Vercel:
+
+1. Connect your repository to Vercel
+2. Deploy automatically on every push to main
+3. Enjoy your beautiful anniversary site!
+
+## Adding New Photos
+
+1. Add your image files to the `public/images/` directory
+2. Use the "+" button on the site to add new memories
+3. Or edit the `initialPhotos` array in `AnniversaryPage.tsx`
+
+## Customization
+
+- Edit the header message in `Header.tsx`
+- Modify the featured photo in `AnniversaryPage.tsx`
+- Add new categories in `PhotoGrid.tsx`
+- Customize colors and styling in the component files
+
+Built with ❤️ for our special anniversary!
