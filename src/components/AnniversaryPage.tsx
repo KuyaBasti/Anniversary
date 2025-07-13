@@ -25,12 +25,12 @@ export default function AnniversaryPage() {
   const [photos, setPhotos] = useState<Photo[]>([
     {
       id: '1',
-      src: '/LakeBeryessa.JPG',
-      alt: 'Lake day',
-      title: 'Lake Beryessa',
-      date: 'March 28, 2025',
-      description: 'Spontaneous walk along Lake Beryessa. The way the light hit your face against the calm waters is something I\'ll never forget. Let us not forget when we picked wildflowers and made bouqet off of them.',
-      category: 'travels'
+      src: '/Dazzle.JPG',
+      alt: 'Scotssdazzle',
+      title: 'Razzle Dazzle at Scottsdazzle',
+      date: 'December 12, 2024',
+      description: 'Our first time going to Scottsdazzle together. We had a great time and it was a lot of fun. Out of all the bright shining lights, I think the one that stood out the most was you and your beautiful smile.',
+      category: 'special-days'
     },
     {
       id: '2',
@@ -52,15 +52,6 @@ export default function AnniversaryPage() {
     },
     {
       id: '4',
-      src: '/Dazzle.JPG',
-      alt: 'Scotssdazzle',
-      title: 'Razzle Dazzle at Scottsdazzle',
-      date: 'December 12, 2024',
-      description: 'Our first time going to Scottsdazzle together. We had a great time and it was a lot of fun. Out of all the bright shining lights, I think the one that stood out the most was you and your beautiful smile.',
-      category: 'special-days'
-    },
-    {
-      id: '5',
       src: '/TeaGarden.JPG',
       alt: 'Japanese Tea Garden',
       title: 'Japanese Tea Garden',
@@ -69,12 +60,21 @@ export default function AnniversaryPage() {
       category: 'travels'
     },
     {
-      id: '6',
+      id: '5',
       src: '/Windmill.JPG',
       alt: 'Dutch Windmill',
       title: 'Dutch Windmill',
       date: 'March 21, 2025',
       description: 'It felt so nice seeing the beautiful flowers blooming for the first time in Spring. We also got to see the Dutch Windmill and the beautiful view of the ocean. You were so beautiful and I fell inlove even more with you.',
+      category: 'travels'
+    },
+    {
+      id: '6',
+      src: '/LakeBeryessa.JPG',
+      alt: 'Lake day',
+      title: 'Lake Beryessa',
+      date: 'March 28, 2025',
+      description: 'Spontaneous walk along Lake Beryessa. The way the light hit your face against the calm waters is something I\'ll never forget. Let us not forget when we picked wildflowers and made bouqet off of them.',
       category: 'travels'
     }
   ])
