@@ -34,6 +34,15 @@ export default function AnniversaryPage() {
     },
     {
       id: '2',
+      src: '/onion.png',
+      alt: 'Onion',
+      title: 'Onion',
+      date: 'December 12, 2024',
+      description: 'Onion',
+      category: 'special-days'
+    },
+    {
+      id: '3',
       src: '/SFNight.png',
       alt: 'Chinese New Year',
       title: 'Chinese New Year',
@@ -42,7 +51,7 @@ export default function AnniversaryPage() {
       category: 'special-days'
     },
     {
-      id: '3',
+      id: '4',
       src: '/PalaceFineArts.JPG',
       alt: 'Palace of Fine Arts',
       title: 'Palace of Fine Arts',
@@ -51,7 +60,7 @@ export default function AnniversaryPage() {
       category: 'travels'
     },
     {
-      id: '4',
+      id: '5',
       src: '/TeaGarden.JPG',
       alt: 'Japanese Tea Garden',
       title: 'Japanese Tea Garden',
@@ -60,7 +69,7 @@ export default function AnniversaryPage() {
       category: 'travels'
     },
     {
-      id: '5',
+      id: '6',
       src: '/Windmill.JPG',
       alt: 'Dutch Windmill',
       title: 'Dutch Windmill',
@@ -69,7 +78,7 @@ export default function AnniversaryPage() {
       category: 'travels'
     },
     {
-      id: '6',
+      id: '7',
       src: '/LakeBeryessa.JPG',
       alt: 'Lake day',
       title: 'Lake Beryessa',
