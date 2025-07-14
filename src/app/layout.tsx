@@ -10,7 +10,7 @@ const playfairDisplay = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: "Happy 1 Year Anniversary!",
+  title: "Trin and Basti Adventures",
   description: "Our journey together, one memory at a time",
 };
 
