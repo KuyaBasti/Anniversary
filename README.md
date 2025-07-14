@@ -1,6 +1,6 @@
-# Anniversary Photo Book
+# Trin and Basti Adventures
 
-A beautiful anniversary website built with modern web technologies to celebrate our first year together.
+Our website that contains our memories together in a Photo Album.
 
 ## Features
 
@@ -74,4 +74,4 @@ This project is configured for deployment on Vercel:
 - Add new categories in `PhotoGrid.tsx`
 - Customize colors and styling in the component files
 
-Built with ❤️ for our special anniversary!
+Built with ❤️ for my beautiful Princess!
