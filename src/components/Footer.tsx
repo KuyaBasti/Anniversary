@@ -20,7 +20,9 @@ export default function Footer() {
           margin: '0 auto',
           lineHeight: '1.6'
         }}>
-          Our journey together, one memory at a time. This photo book contains the moments we've cherished and the adventures we've shared. Here's to many more memories to come!
+          Our journey together, one memory at a time. 
+          This photo book contains the moments we've cherished 
+          and the adventures we've shared. Here's to many more memories to come!
         </p>
       </div>
     </footer>
