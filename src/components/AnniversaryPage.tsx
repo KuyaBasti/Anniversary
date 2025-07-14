@@ -22,71 +22,92 @@ export default function AnniversaryPage() {
   const [activeCategory, setActiveCategory] = useState('all')
   const [isModalOpen, setIsModalOpen] = useState(false)
   
-  const [photos, setPhotos] = useState<Photo[]>([
+  const photosData = [
     {
-      id: '1',
       src: '/Dazzle.JPG',
       alt: 'Scotssdazzle',
       title: 'Razzle Dazzle at Scottsdazzle',
       date: 'December 12, 2024',
-      description: 'Our first time going to Scottsdazzle together. We had a great time and it was a lot of fun. Out of all the bright shining lights, I think the one that stood out the most was you and your beautiful smile.',
-      category: 'special-days'
+      description: `Our first time going to Scottsdazzle together. 
+        We had a great time and it was a lot of fun. 
+        Out of all the bright shining lights, 
+        I think the one that stood out the most was you and your beautiful smile.`,
+      category: 'special-days' as const
     },
     {
-      id: '2',
-      src: '/onion.png',
-      alt: 'Onion',
-      title: 'Onion',
-      date: 'December 12, 2024',
-      description: 'Onion',
-      category: 'special-days'
+      src: '/BrunchSnob.png',
+      alt: 'Brunch Snob',
+      title: 'Brunch Snob',
+      date: 'January 12, 2025',
+      description: `We went to brunch to this wonderful vibey place called Brunch Snob. 
+        We always wanted to eat Onion Rings and we finally we were finally able to. 
+        It was our last day together before I go back home :(`,
+      category: 'special-days' as const
     },
     {
-      id: '3',
       src: '/SFNight.png',
       alt: 'Chinese New Year',
       title: 'Chinese New Year',
       date: 'February 15, 2025',
-      description: 'Chinese New Year at San Francisco! Although we were not able to go to Chinatown, we were able to enjoy each other\'s company and have a good time.',
-      category: 'special-days'
+      description: `Chinese New Year at San Francisco! 
+        Although we were not able to go to Chinatown, 
+        we were able to enjoy each other's company and have a good time.`,
+      category: 'special-days' as const
     },
     {
-      id: '4',
       src: '/PalaceFineArts.JPG',
       alt: 'Palace of Fine Arts',
       title: 'Palace of Fine Arts',
       date: 'February 15, 2025',
-      description: 'Our magical day at the Palace of Fine Arts in San Francisco. The way the golden light illuminated the classical architecture, creating perfect silhouettes against the lagoon. We spent hours promenading through the colonnade and taking pictures. Such a romantic spot in the city.',
-      category: 'travels'
+      description: `Our magical day at the Palace of Fine Arts in San Francisco. 
+        The way the golden light illuminated the classical architecture, 
+        creating perfect silhouettes against the lagoon. 
+        We spent hours promenading through the colonnade and taking pictures. 
+        Such a romantic spot in the city.`,
+      category: 'travels' as const
     },
     {
-      id: '5',
       src: '/TeaGarden.JPG',
       alt: 'Japanese Tea Garden',
       title: 'Japanese Tea Garden',
       date: 'February 17, 2025',
-      description: 'Our first time going to the Japanese Tea Garden together. We had a great time and it was a lot of fun. We got to see your favorite which is the Koi fish pond lol. There were also a lot of beautiful flowers and trees. It felt so peaceful and relaxing.',
-      category: 'travels'
+      description: `Our first time going to the Japanese Tea Garden together. 
+        We had a great time and it was a lot of fun. 
+        We got to see your favorite which is the Koi fish pond lol. 
+        There were also a lot of beautiful flowers and trees. 
+        It felt so peaceful and relaxing.`,
+      category: 'travels' as const
     },
     {
-      id: '6',
       src: '/Windmill.JPG',
       alt: 'Dutch Windmill',
       title: 'Dutch Windmill',
       date: 'March 21, 2025',
-      description: 'It felt so nice seeing the beautiful flowers blooming for the first time in Spring. We also got to see the Dutch Windmill and the beautiful view of the ocean. You were so beautiful and I fell inlove even more with you.',
-      category: 'travels'
+      description: `It felt so nice seeing the beautiful 
+        flowers blooming for the first time in Spring. 
+        We also got to see the Dutch Windmill and the beautiful view of the ocean. 
+        You were so beautiful and I fell inlove even more with you.`,
+      category: 'travels' as const
     },
     {
-      id: '7',
       src: '/LakeBeryessa.JPG',
       alt: 'Lake day',
       title: 'Lake Beryessa',
       date: 'March 28, 2025',
-      description: 'Spontaneous walk along Lake Beryessa. The way the light hit your face against the calm waters is something I\'ll never forget. Let us not forget when we picked wildflowers and made bouqet off of them.',
-      category: 'travels'
+      description: `Spontaneous walk along Lake Beryessa. 
+        The way the light hit your face against the calm waters 
+        is something I'll never forget. 
+        Let us not forget when we picked wildflowers and made bouqet off of them.`,
+      category: 'travels' as const
     }
-  ])
+  ]
+
+  const [photos, setPhotos] = useState<Photo[]>(
+    photosData.map((photo, index) => ({
+      ...photo,
+      id: `photo-${index + 1}`
+    }))
+  )
 
   const featuredPhoto: Photo = {
     id: 'featured',
@@ -94,7 +115,10 @@ export default function AnniversaryPage() {
     alt: 'Our first moment together',
     title: 'Our first moment together',
     date: 'July 21, 2024',
-    description: 'This was our first official photo taken of us. It was a very fun and awful experience at the same time wink wink lol. I threw up, you ruined your shirt. But all in all we enjoyed our time together and we had a good night after that.',
+    description: `This was our first official photo taken of us. 
+      It was a very fun and awful experience at the same time wink wink lol. 
+      I threw up, you ruined your shirt. 
+      But all in all we enjoyed our time together and we had a good night after that.`,
     category: 'special-days'
   }
 
