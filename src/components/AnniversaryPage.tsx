@@ -24,6 +24,16 @@ export default function AnniversaryPage() {
   
   const photosData = [
     {
+      src: '/Papago.png',
+      alt: 'Papago Park',
+      title: 'Thanksgiving with the Goods',
+      date: 'November 26, 2024',
+      description: `First time meeting the Good Family during Thanksgiving.
+        It was so much fun except for when you made fun of me when I slipped
+        on the way down from the hike. `,
+      category: 'special-days' as const
+    },
+    {
       src: '/Dazzle.JPG',
       alt: 'Scotssdazzle',
       title: 'Razzle Dazzle at Scottsdazzle',
