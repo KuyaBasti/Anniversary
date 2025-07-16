@@ -119,7 +119,17 @@ export default function AnniversaryPage() {
         is something I'll never forget. 
         Let us not forget when we picked wildflowers and made bouqet off of them.`,
       category: 'travels' as const
-    }
+    },
+    {
+      src: '/TrinBday.png',
+      alt: 'Trinity\'s Birthday',
+      title: 'Trinity\'s Birthday',
+      date: 'June 25, 2025',
+      description: `Trinity's Birthday! 
+        My princess's most important day. She deserved all the love and attention.
+        We spent time both with your friends and your family all throughout the day.`,
+      category: 'special-days' as const
+    },
   ]
 
   const [photos, setPhotos] = useState<Photo[]>(
