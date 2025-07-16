@@ -40,39 +40,6 @@ export default function Header() {
       textAlign: 'center',
       position: 'relative'
     }}>
-      {/* Simple timer on the left - outside of centered container */}
-      <div style={{
-        position: 'absolute',
-        left: '20px',
-        top: '50%',
-        transform: 'translateY(-50%)',
-        fontSize: '14px',
-        color: '#777',
-        fontFamily: 'var(--font-playfair)',
-        textAlign: 'left'
-      }}>
-        <div style={{
-          fontSize: '12px',
-          color: '#999',
-          marginBottom: '2px'
-        }}>
-          Together for
-        </div>
-        <div style={{
-          fontSize: '18px',
-          color: '#333',
-          fontWeight: '600'
-        }}>
-          {timeElapsed.days} days
-        </div>
-        <div style={{
-          fontSize: '11px',
-          color: '#999'
-        }}>
-          {timeElapsed.hours}h {timeElapsed.minutes}m {timeElapsed.seconds}s
-        </div>
-      </div>
-
       <div style={{
         maxWidth: '1200px',
         margin: '0 auto',
@@ -91,12 +58,22 @@ export default function Header() {
           fontStyle: 'italic',
           margin: '10px 0',
           fontSize: '18px',
-          color: '#777'
+          color: '#777',
+          textAlign: 'center'
         }}>
           I am so lucky to have you in my life. The moments we've shared have been nothing 
           short of magical. I am so grateful to have you in my life. 
           I love you more than words can say. 
         </p>
+        <div style={{
+          textAlign: 'center',
+          marginTop: '15px',
+          fontSize: '14px',
+          color: '#999',
+          fontStyle: 'italic'
+        }}>
+          Together for {timeElapsed.days} days, {timeElapsed.hours} hours, {timeElapsed.minutes} minutes, and {timeElapsed.seconds} seconds 💕
+        </div>
       </div>
     </header>
   )
