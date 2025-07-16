@@ -37,47 +37,47 @@ export default function Header() {
       backgroundColor: '#fff',
       boxShadow: '0 2px 5px rgba(0,0,0,0.1)',
       padding: '20px 0',
-      textAlign: 'center'
+      textAlign: 'center',
+      position: 'relative'
     }}>
+      {/* Simple timer on the left - outside of centered container */}
+      <div style={{
+        position: 'absolute',
+        left: '20px',
+        top: '50%',
+        transform: 'translateY(-50%)',
+        fontSize: '14px',
+        color: '#777',
+        fontFamily: 'var(--font-playfair)',
+        textAlign: 'left'
+      }}>
+        <div style={{
+          fontSize: '12px',
+          color: '#999',
+          marginBottom: '2px'
+        }}>
+          Together for
+        </div>
+        <div style={{
+          fontSize: '18px',
+          color: '#333',
+          fontWeight: '600'
+        }}>
+          {timeElapsed.days} days
+        </div>
+        <div style={{
+          fontSize: '11px',
+          color: '#999'
+        }}>
+          {timeElapsed.hours}h {timeElapsed.minutes}m {timeElapsed.seconds}s
+        </div>
+      </div>
+
       <div style={{
         maxWidth: '1200px',
         margin: '0 auto',
-        padding: '0 15px',
-        position: 'relative'
+        padding: '0 15px'
       }}>
-        {/* Simple timer on the left */}
-        <div style={{
-          position: 'absolute',
-          left: '15px',
-          top: '50%',
-          transform: 'translateY(-50%)',
-          fontSize: '14px',
-          color: '#777',
-          fontFamily: 'var(--font-playfair)',
-          textAlign: 'left'
-        }}>
-          <div style={{
-            fontSize: '12px',
-            color: '#999',
-            marginBottom: '2px'
-          }}>
-            Together for
-          </div>
-          <div style={{
-            fontSize: '18px',
-            color: '#333',
-            fontWeight: '600'
-          }}>
-            {timeElapsed.days} days
-          </div>
-          <div style={{
-            fontSize: '11px',
-            color: '#999'
-          }}>
-            {timeElapsed.hours}h {timeElapsed.minutes}m {timeElapsed.seconds}s
-          </div>
-        </div>
-
         <h1 style={{
           fontFamily: 'var(--font-playfair), "Playfair Display", Georgia, serif',
           fontSize: '48px',
