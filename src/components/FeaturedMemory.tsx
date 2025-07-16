@@ -38,6 +38,29 @@ export default function FeaturedMemory({ photo }: FeaturedMemoryProps) {
           {photo.title}
         </h2>
         
+        <div
+          onClick={() => window.open(`https://maps.google.com/maps?q=${encodeURIComponent(photo.location)}`, '_blank')}
+          style={{
+            fontSize: '16px',
+            color: '#888',
+            marginBottom: '10px',
+            cursor: 'pointer',
+            fontStyle: 'italic',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px',
+            transition: 'color 0.2s ease'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.color = '#555'
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.color = '#888'
+          }}
+        >
+          📍 {photo.location}
+        </div>
+        
         <p style={{
           fontSize: '14px',
           color: '#777',

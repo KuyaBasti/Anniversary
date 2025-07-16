@@ -12,6 +12,7 @@ interface AddPhotoModalProps {
 export default function AddPhotoModal({ isOpen, onClose, onAddPhoto }: AddPhotoModalProps) {
   const [formData, setFormData] = useState({
     title: '',
+    location: '',
     date: '',
     description: '',
     category: 'travels' as Photo['category'],
@@ -21,7 +22,7 @@ export default function AddPhotoModal({ isOpen, onClose, onAddPhoto }: AddPhotoM
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     
-    if (!formData.title || !formData.date || !formData.description || !formData.imagePath) {
+    if (!formData.title || !formData.location || !formData.date || !formData.description || !formData.imagePath) {
       alert('Please fill in all fields')
       return
     }
@@ -30,6 +31,7 @@ export default function AddPhotoModal({ isOpen, onClose, onAddPhoto }: AddPhotoM
       src: formData.imagePath,
       alt: formData.title,
       title: formData.title,
+      location: formData.location,
       date: formData.date,
       description: formData.description,
       category: formData.category
@@ -38,6 +40,7 @@ export default function AddPhotoModal({ isOpen, onClose, onAddPhoto }: AddPhotoM
     // Reset form
     setFormData({
       title: '',
+      location: '',
       date: '',
       description: '',
       category: 'travels',
@@ -126,6 +129,30 @@ export default function AddPhotoModal({ isOpen, onClose, onAddPhoto }: AddPhotoM
                 fontSize: '16px'
               }}
               placeholder="Give this memory a title"
+              required
+            />
+          </div>
+
+          <div style={{ marginBottom: '20px' }}>
+            <label style={{
+              display: 'block',
+              marginBottom: '8px',
+              fontWeight: 'bold'
+            }}>Location</label>
+            <input
+              type="text"
+              name="location"
+              value={formData.location}
+              onChange={handleInputChange}
+              style={{
+                width: '100%',
+                padding: '10px',
+                border: '1px solid #ddd',
+                borderRadius: '4px',
+                fontFamily: 'inherit',
+                fontSize: '16px'
+              }}
+              placeholder="Where was this memory made?"
               required
             />
           </div>

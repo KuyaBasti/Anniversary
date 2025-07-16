@@ -45,6 +45,29 @@ export default function PhotoCard({ photo }: PhotoCardProps) {
           {photo.title}
         </h3>
         
+        <div
+          onClick={() => window.open(`https://maps.google.com/maps?q=${encodeURIComponent(photo.location)}`, '_blank')}
+          style={{
+            fontSize: '14px',
+            color: '#888',
+            marginBottom: '8px',
+            cursor: 'pointer',
+            fontStyle: 'italic',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '4px',
+            transition: 'color 0.2s ease'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.color = '#555'
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.color = '#888'
+          }}
+        >
+          📍 {photo.location}
+        </div>
+        
         <p style={{
           fontSize: '14px',
           color: '#777',

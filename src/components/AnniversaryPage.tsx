@@ -13,6 +13,7 @@ export interface Photo {
   src: string
   alt: string
   title: string
+  location: string
   date: string
   description: string
   category: 'travels' | 'date-nights' | 'adventures' | 'special-days'
@@ -27,6 +28,7 @@ export default function AnniversaryPage() {
       src: '/Papago.png',
       alt: 'Papago Park',
       title: 'Thanksgiving with the Goods',
+      location: 'Papago Park, Phoenix, AZ',
       date: 'November 26, 2024',
       description: `First time meeting the Good Family during Thanksgiving.
         It was so much fun except for when you made fun of me when I slipped
@@ -37,6 +39,7 @@ export default function AnniversaryPage() {
       src: '/Lights.png',
       alt: 'Christmas Lights',
       title: 'New Years with the Goods',
+      location: 'Scottsdale, AZ',
       date: 'December 31, 2024',
       description: `This was such a fun night. We got to see such beautiful lights.
         Your family saw for the first time how weird and funny we are as a couple.
@@ -47,6 +50,7 @@ export default function AnniversaryPage() {
       src: '/Dazzle.JPG',
       alt: 'Scotssdazzle',
       title: 'Razzle Dazzle at Scottsdazzle',
+      location: 'Scottsdale, AZ',
       date: 'December 12, 2024',
       description: `Our first time going to Scottsdazzle together. 
         We had a great time and it was a lot of fun. 
@@ -58,6 +62,7 @@ export default function AnniversaryPage() {
       src: '/BrunchSnob.png',
       alt: 'Brunch Snob',
       title: 'Brunch Snob',
+      location: 'Brunch Snob, Scottsdale, AZ',
       date: 'January 12, 2025',
       description: `We went to brunch to this wonderful vibey place called Brunch Snob. 
         We always wanted to eat Onion Rings and we finally we were finally able to. 
@@ -68,6 +73,7 @@ export default function AnniversaryPage() {
       src: '/SFNight.png',
       alt: 'Chinese New Year',
       title: 'Chinese New Year',
+      location: 'San Francisco, CA',
       date: 'February 15, 2025',
       description: `Chinese New Year at San Francisco! 
         Although we were not able to go to Chinatown, 
@@ -78,6 +84,7 @@ export default function AnniversaryPage() {
       src: '/PalaceFineArts.JPG',
       alt: 'Palace of Fine Arts',
       title: 'Palace of Fine Arts',
+      location: 'Palace of Fine Arts, San Francisco, CA',
       date: 'February 15, 2025',
       description: `Our magical day at the Palace of Fine Arts in San Francisco. 
         The way the golden light illuminated the classical architecture, 
@@ -90,6 +97,7 @@ export default function AnniversaryPage() {
       src: '/TeaGarden.JPG',
       alt: 'Japanese Tea Garden',
       title: 'Japanese Tea Garden',
+      location: 'Japanese Tea Garden, San Francisco, CA',
       date: 'February 17, 2025',
       description: `Our first time going to the Japanese Tea Garden together. 
         We had a great time and it was a lot of fun. 
@@ -102,6 +110,7 @@ export default function AnniversaryPage() {
       src: '/Windmill.JPG',
       alt: 'Dutch Windmill',
       title: 'Dutch Windmill',
+      location: 'Golden Gate Park, San Francisco, CA',
       date: 'March 21, 2025',
       description: `It felt so nice seeing the beautiful 
         flowers blooming for the first time in Spring. 
@@ -113,6 +122,7 @@ export default function AnniversaryPage() {
       src: '/LakeBeryessa.JPG',
       alt: 'Lake day',
       title: 'Lake Beryessa',
+      location: 'Lake Berryessa, Napa County, CA',
       date: 'March 28, 2025',
       description: `Spontaneous walk along Lake Beryessa. 
         The way the light hit your face against the calm waters 
@@ -124,6 +134,7 @@ export default function AnniversaryPage() {
       src: '/TrinBday.png',
       alt: 'Trinity\'s Birthday',
       title: 'Trinity\'s Birthday',
+      location: 'Scottsdale, AZ',
       date: 'June 25, 2025',
       description: `Trinity's Birthday! 
         My princess's most important day. She deserved all the love and attention.
@@ -144,6 +155,7 @@ export default function AnniversaryPage() {
     src: '/MainPic.png',
     alt: 'Our first moment together',
     title: 'Our first moment together',
+    location: 'Scottsdale, AZ',
     date: 'July 21, 2024',
     description: `This was our first official photo taken of us. 
       It was a very fun and awful experience at the same time wink wink lol. 
