@@ -34,6 +34,16 @@ export default function AnniversaryPage() {
       category: 'special-days' as const
     },
     {
+      src: '/Lights.png',
+      alt: 'Christmas Lights',
+      title: 'New Years with the Goods',
+      date: 'December 31, 2024',
+      description: `This was such a fun night. We got to see such beautiful lights.
+        Your family saw for the first time how weird and funny we are as a couple.
+        Protein! Protein! Protein!`,
+      category: 'special-days' as const
+    },
+    {
       src: '/Dazzle.JPG',
       alt: 'Scotssdazzle',
       title: 'Razzle Dazzle at Scottsdazzle',

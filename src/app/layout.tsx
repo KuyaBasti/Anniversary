@@ -11,7 +11,7 @@ const playfairDisplay = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Trin and Basti Adventures",
-  description: "Our journey together, one memory at a time",
+  description: "Trin and Basti Adventures",
 };
 
 export default function RootLayout({
