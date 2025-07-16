@@ -36,21 +36,30 @@ npm run dev
 ## Project Structure
 
 ```
-src/
-├── app/
-│   ├── layout.tsx          # Root layout with metadata
-│   ├── page.tsx            # Home page
-│   └── globals.css         # Global styles
-├── components/
-│   ├── AnniversaryPage.tsx # Main page component
-│   ├── Header.tsx          # Site header
-│   ├── FeaturedMemory.tsx  # Featured photo display
-│   ├── PhotoGrid.tsx       # Photo grid with filtering
-│   ├── PhotoCard.tsx       # Individual photo cards
-│   ├── AddPhotoModal.tsx   # Modal for adding new photos
-│   └── Footer.tsx          # Site footer
-└── public/
-    └── images/             # Photo assets
+Trin-and-Basti-Adventures/
+├── next-env.d.ts           # Next.js TypeScript declarations
+├── next.config.js          # Next.js configuration
+├── package-lock.json       # Package lock file
+├── package.json            # Dependencies and scripts
+├── postcss.config.js       # PostCSS configuration
+├── tailwind.config.js      # Tailwind CSS configuration
+├── tsconfig.json           # TypeScript configuration
+├── vercel.json             # Vercel deployment configuration
+├── README.md               # Project documentation
+├── public/                 # Static assets (photos)
+└── src/
+    ├── app/
+    │   ├── layout.tsx      # Root layout with metadata and fonts
+    │   ├── page.tsx        # Home page entry point
+    │   └── globals.css     # Global Tailwind styles
+    └── components/
+        ├── AnniversaryPage.tsx  # Main page component with photo data
+        ├── Header.tsx           # Site header with relationship timer
+        ├── FeaturedMemory.tsx   # Featured photo display with location
+        ├── PhotoGrid.tsx        # Photo grid with category filtering
+        ├── PhotoCard.tsx        # Individual photo cards with clickable locations
+        ├── AddPhotoModal.tsx    # Modal for adding new photos with location
+        └── Footer.tsx           # Site footer
 ```
 
 ## Deployment
