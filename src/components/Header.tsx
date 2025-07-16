@@ -1,6 +1,37 @@
-import React from 'react'
+'use client'
+
+import React, { useState, useEffect } from 'react'
+
+interface TimeElapsed {
+  days: number
+  hours: number
+  minutes: number
+  seconds: number
+}
 
 export default function Header() {
+  const [timeElapsed, setTimeElapsed] = useState<TimeElapsed>({ days: 0, hours: 0, minutes: 0, seconds: 0 })
+
+  useEffect(() => {
+    const startDate = new Date('2024-07-03T00:00:00')
+    
+    const updateTimer = () => {
+      const now = new Date()
+      const diff = now.getTime() - startDate.getTime()
+      
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24))
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000)
+      
+      setTimeElapsed({ days, hours, minutes, seconds })
+    }
+
+    updateTimer()
+    const interval = setInterval(updateTimer, 1000)
+    
+    return () => clearInterval(interval)
+  }, [])
   return (
     <header style={{
       backgroundColor: '#fff',
@@ -11,13 +42,48 @@ export default function Header() {
       <div style={{
         maxWidth: '1200px',
         margin: '0 auto',
-        padding: '0 15px'
+        padding: '0 15px',
+        position: 'relative'
       }}>
+        {/* Simple timer on the left */}
+        <div style={{
+          position: 'absolute',
+          left: '15px',
+          top: '50%',
+          transform: 'translateY(-50%)',
+          fontSize: '14px',
+          color: '#777',
+          fontFamily: 'var(--font-playfair)',
+          textAlign: 'left'
+        }}>
+          <div style={{
+            fontSize: '12px',
+            color: '#999',
+            marginBottom: '2px'
+          }}>
+            Together for
+          </div>
+          <div style={{
+            fontSize: '18px',
+            color: '#333',
+            fontWeight: '600'
+          }}>
+            {timeElapsed.days} days
+          </div>
+          <div style={{
+            fontSize: '11px',
+            color: '#999'
+          }}>
+            {timeElapsed.hours}h {timeElapsed.minutes}m {timeElapsed.seconds}s
+          </div>
+        </div>
+
         <h1 style={{
           fontFamily: 'var(--font-playfair), "Playfair Display", Georgia, serif',
           fontSize: '48px',
           margin: '0',
-          color: '#333'
+          color: '#333',
+          textAlign: 'center'
         }}>
           Trin and Basti Adventures
         </h1>
